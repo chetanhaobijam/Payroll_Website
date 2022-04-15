@@ -18,14 +18,22 @@
 <body>
   
   <header>
-    <nav>
-      <div class="nav-header">Admin Dashboard</div>
-      <div class="nav-header-public">Dashboard</div>
-      <div class="nav-menu">
-        Hamburger Menu Button
+    <nav class=" d-flex align-items-center">
+      <div class="nav-header p-3 d-flex align-items-center">
+        <h1>Admin Dashboard</h1>
+        <div class="nav-menu ml-auto">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <div class="user-image"></div>
-      <div class="user-id">User: Haobijam Chetan Singh</div>
+      <ul class="nav-items d-flex align-items-center ml-auto mr-3">
+        <li class="user-icon">
+          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Men 11 Portrait" class="rounded-circle">
+        </li>
+        <li class="drop-down">
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+        <li class="user-id">Haobijam Chetan Singh</li>
+      </ul>
     </nav>
   </header>
 
@@ -68,7 +76,7 @@
         <div class="side-title">Employee Wages</div>
       </li>
     </ul>
-    <ul class="public-sidebar">
+    <ul class="public-sidebar d-none">
       <li>
         <div class="side-icon"></div>
         <div class="side-title">Dashboard</div>

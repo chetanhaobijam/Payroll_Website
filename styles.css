@@ -12,13 +12,41 @@
   --dark-blue: #345276;
   --navy: #595a84;
 
-  --blue-gradient: linear-gradient(to top, #09203f 0%, #537895 100%);
+  --blue-gradient-top: linear-gradient(to top, #09203f 0%, #537895 100%);
+  --blue-gradient-right: linear-gradient(to right, #09203f 0%, #537895 100%);
 }
-  
+
 body, html {
   font-family: 'Roboto';
 }
 
-h1 {
-  color: var(--navy);
+header nav {
+  color: #fff;
+  background: var(--blue-gradient-right);
+}
+
+header nav .nav-header {
+  background: var(--dark-blue);
+  width: 300px;
+}
+
+header nav .nav-header h1 {
+  color: #fff;
+  font-size: 1.5rem;
+
+}
+
+header nav .nav-header .nav-menu i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header nav .nav-items {
+  list-style: none;
+  margin-bottom: 0;
+  gap: 1rem;
+}
+
+header nav .nav-items .user-icon img {
+  width: 50px;
 }
