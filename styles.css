@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
 
 * {
   margin: 0;
@@ -23,6 +23,7 @@ body, html {
 header nav {
   color: #fff;
   background: var(--blue-gradient-right);
+  font-weight: 300;
 }
 
 header nav .nav-header {
@@ -33,6 +34,8 @@ header nav .nav-header {
 header nav .nav-header h1 {
   color: #fff;
   font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Lobster';
 
 }
 
@@ -49,4 +52,50 @@ header nav .nav-items {
 
 header nav .nav-items .user-icon img {
   width: 50px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 4.3rem;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background: var(--blue-gradient-top);
+  color: var(--white);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 0.7rem 0.5rem;
+  cursor: pointer;
+  display: flex;
+  gap: 1em;
+  color: #dfe5f5;
+}
+
+.main {
+  margin: 1rem 1rem 1rem 20rem;
+  background: var(--gray);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 500px;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100vw;
+  padding-left: 330px;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+
+/* Javascript Styles */
+.short-width {
+  width: 75px;
 }
