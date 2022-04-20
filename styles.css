@@ -76,6 +76,10 @@ header nav .nav-items .user-icon img {
   color: #dfe5f5;
 }
 
+.sidebar ul li .side-icon img {
+  width: 30px;
+}
+
 .main {
   margin: 1rem 1rem 1rem 20rem;
   background: var(--gray);

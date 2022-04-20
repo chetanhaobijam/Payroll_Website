@@ -1,0 +1,18 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Division_List">
+<g id="Clipboard">
+<g id="First_Bars">
+<rect id="Rectangle 82" x="21" y="37" width="25" height="5.62957" rx="2.81478" fill="white"/>
+<rect id="Rectangle 84" x="21" y="53.8888" width="25" height="5.62957" rx="2.81478" fill="white"/>
+<rect id="Rectangle 85" x="21" y="70.7773" width="25" height="5.62956" rx="2.81478" fill="white"/>
+</g>
+<g id="Second_Bars">
+<rect id="Rectangle 84_2" x="64" y="71" width="25" height="5.62957" rx="2.81478" fill="white"/>
+<rect id="Rectangle 85_2" x="64" y="87.8885" width="25" height="5.62956" rx="2.81478" fill="white"/>
+<rect id="Rectangle 86" x="64" y="104.777" width="25" height="5.62957" rx="2.81479" fill="white"/>
+</g>
+<path id="Vector" d="M90.8889 15.6962H69.7567C67.6333 9.49239 62.0722 5 55.5 5C48.9278 5 43.3667 9.49239 41.2433 15.6962H20.1111C14.55 15.6962 10 20.5095 10 26.3923V111.962C10 117.845 14.55 122.658 20.1111 122.658H90.8889C96.45 122.658 101 117.845 101 111.962V26.3923C101 20.5095 96.45 15.6962 90.8889 15.6962ZM55.5 15.6962C58.2806 15.6962 60.5556 18.1028 60.5556 21.0443C60.5556 23.9857 58.2806 26.3923 55.5 26.3923C52.7194 26.3923 50.4444 23.9857 50.4444 21.0443C50.4444 18.1028 52.7194 15.6962 55.5 15.6962ZM95.9444 116.465H16.1199V21.8887H30.2222V32.0219H80.7778V21.8887H95.4123L95.9444 116.465Z" fill="white"/>
+</g>
+<rect id="Rectangle 162" x="81.4472" y="43" width="5" height="77" rx="2.5" transform="rotate(45 81.4472 43)" fill="white"/>
+</g>
+</svg>
