@@ -20,86 +20,92 @@ body, html {
   font-family: 'Roboto';
 }
 
-header nav {
-  color: #fff;
+header .navbar {
   background: var(--blue-gradient-right);
-  font-weight: 300;
+  padding: 0;
 }
 
-header nav .nav-header {
-  background: var(--dark-blue);
-  width: 300px;
-}
-
-header nav .nav-header h1 {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 300;
+header .navbar .navbar-brand {
   font-family: 'Lobster';
-
-}
-
-header nav .nav-header .nav-menu i {
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  width: 200px;
   font-size: 1.5rem;
-  cursor: pointer;
+  font-weight: 300;
 }
 
-header nav .nav-items {
-  list-style: none;
-  margin-bottom: 0;
-  gap: 1rem;
+header .navbar .nav-user {
+  gap: 1em;
 }
 
-header nav .nav-items .user-icon img {
+header .navbar .nav-user .user-icon img {
   width: 50px;
 }
 
-.sidebar {
+header .navbar .navbar-collapse {
   position: fixed;
-  top: 4.3rem;
-  left: 0;
-  width: 300px;
-  height: 100vh;
+  top: 4.2em;
+  left: 0em;
+  min-width: 100%;
+}
+
+header .navbar div .navbar-nav {
   background: var(--blue-gradient-top);
-  color: var(--white);
 }
 
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  padding: 0.7rem 0.5rem;
-  cursor: pointer;
-  display: flex;
+header .navbar div .navbar-nav .nav-item {
   gap: 1em;
-  color: #dfe5f5;
 }
 
-.sidebar ul li .side-icon img {
+header .navbar div .navbar-nav .nav-item .nav-icon img {
   width: 30px;
 }
 
 .main {
-  margin: 1rem 1rem 1rem 20rem;
+  margin: 1rem;
   background: var(--gray);
   border-radius: 5px;
   padding: 1rem;
   height: 500px;
+  transition: all ease 0.5s;
+}
+
+.narrow-main {
+  margin-left: 1rem !important;
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 1rem;
   left: 0;
   width: 100vw;
-  padding-left: 330px;
+  padding-left: 1rem;
   font-weight: 300;
   font-size: 0.9rem;
+  transition: all ease 0.5s;
 }
 
+.narrow-footer {
+  padding-left: 1rem;
+}
 
-/* Javascript Styles */
-.short-width {
-  width: 75px;
+@media screen and (min-width: 480px) {
+  header .navbar .navbar-brand {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .navbar .navbar-collapse {
+    min-width: 300px;
+  }
+  header .navbar div .navbar-nav {
+    height: 100vh;
+  }
+  .narrow-main {
+    margin-left: 20rem !important;
+  }
+  .narrow-footer {
+    padding-left: 330px;
+  }
 }
