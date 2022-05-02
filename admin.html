@@ -18,83 +18,69 @@
 <body>
   
   <header>
-    <nav class=" d-flex align-items-center">
-      <div class="nav-header p-3 d-flex align-items-center">
-        <h1>Admin Dashboard</h1>
-        <div class="nav-menu ml-auto">
-          <i class="fa-solid fa-bars"></i>
+    <nav class="navbar navbar-dark ">
+      <a class="navbar-brand" href="#">Admin Dashboard</a>
+      <div class="nav-user d-flex align-items-center text-light ml-sm-auto mr-1 mr-md-3">
+        <div class="user-icon">
+          <img src="./user.png" alt="User Icon">
         </div>
-      </div>
-      <ul class="nav-items d-flex align-items-center ml-auto mr-3">
-        <li class="user-icon">
-          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Men 11 Portrait" class="rounded-circle">
-        </li>
-        <li class="drop-down">
+        <div class="drop-down">
           <i class="fa-solid fa-chevron-down"></i>
-        </li>
-        <li class="user-id">Haobijam Chetan Singh</li>
-      </ul>
+        </div>
+        <div class="user-id d-none d-md-block">Haobijam Chetan Singh</div>
+      </div>
+      <button class="navbar-toggler mr-3" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav py-3">
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Admin_Dashboard.svg" alt="Admin Dashboard">
+            </div>
+            <a class="nav-link active" href="#">Admin Dashboard</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Add_User.svg" alt="Add User">
+            </div>
+            <a class="nav-link" href="#">Add User</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Attendance_Setting.svg" alt="Attendance Setting">
+            </div>
+            <a class="nav-link" href="#">Attendance Setting</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Holiday List.svg" alt="Holiday List">
+            </div>
+            <a class="nav-link" href="#">Holiday List</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Division_List.svg" alt="Division List">
+            </div>
+            <a class="nav-link" href="#">Division List</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Designation_List.svg" alt="Designation List">
+            </div>
+            <a class="nav-link" href="#">Designation List</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Employee_Details.svg" alt="Employee Details">
+            </div>
+            <a class="nav-link" href="#">Employee Details</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-
-  <aside class="sidebar p-3">
-    <ul>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Admin Dashboard</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Add User</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Attendance Setting</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Holiday List</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Swift Master (Roaster Timing)</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Division List</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Designation List</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Employee Details</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Employee Wages</div>
-      </li>
-    </ul>
-  </aside>
 
   <main class="main">
     <h2>Main Dashboard Area</h2>

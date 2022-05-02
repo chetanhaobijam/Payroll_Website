@@ -18,59 +18,57 @@
 <body>
   
   <header>
-    <nav class=" d-flex align-items-center">
-      <div class="nav-header p-3 d-flex align-items-center">
-        <h1>Dashboard</h1>
-        <div class="nav-menu ml-auto">
-          <i class="fa-solid fa-bars"></i>
+    <nav class="navbar navbar-dark fixed-top">
+      <a class="navbar-brand" href="#">Admin Dashboard</a>
+      <div class="nav-user d-flex align-items-center text-light ml-sm-auto mr-1 mr-md-3">
+        <div class="user-icon">
+          <img src="./user.png" alt="User Icon">
         </div>
-      </div>
-      <ul class="nav-items d-flex align-items-center ml-auto mr-3">
-        <li class="user-icon">
-          <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Men 11 Portrait" class="rounded-circle">
-        </li>
-        <li class="drop-down">
+        <div class="drop-down">
           <i class="fa-solid fa-chevron-down"></i>
-        </li>
-        <li class="user-id">Haobijam Chetan Singh</li>
-      </ul>
+        </div>
+        <div class="user-id d-none d-md-block">Haobijam Chetan Singh</div>
+      </div>
+      <button class="navbar-toggler mr-3" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav py-3">
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Public_Dashboard.svg" alt="Public Dashboard">
+            </div>
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Employee_Alteration.svg" alt="Employee Alteration">
+            </div>
+            <a class="nav-link" href="#">Employee Alteration</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Attendance_Log_Entry.svg" alt="Attendance Log Entry">
+            </div>
+            <a class="nav-link" href="#">Attendance Log Entry</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Salary_Preparation.svg" alt="Salary Preparation">
+            </div>
+            <a class="nav-link" href="#">Salary Preparation</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ml-4 py-1">
+            <div class="nav-icon">
+              <img src="./Final_Salary.svg" alt="Final Salary">
+            </div>
+            <a class="nav-link" href="#">Final Salary</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-
-  <aside class="sidebar p-3">
-    <ul>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Dashboard</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Emp Alteration</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Attendance Log Entry</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Salary Preparation</div>
-      </li>
-      <li>
-        <div class="side-icon">
-          <i class="fa-solid fa-chart-pie"></i>
-        </div>
-        <div class="side-title">Final Salary</div>
-      </li>
-    </ul>
-  </aside>
 
   <main class="main">
     <h2>Main Dashboard Area</h2>

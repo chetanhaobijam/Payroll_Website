@@ -1,0 +1,19 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Public_Dashboard">
+<g id="dashboard">
+<rect id="Container" x="6" y="6" width="107.807" height="91" stroke="white" stroke-width="2"/>
+<g id="Vertical_Chart">
+<rect id="Rectangle 74" x="78.0714" y="40.3362" width="27.6638" height="4.7449" transform="rotate(90 78.0714 40.3362)" fill="white"/>
+<rect id="Rectangle 76" x="97.051" y="47.2522" width="20.7479" height="4.7449" transform="rotate(90 97.051 47.2522)" fill="white"/>
+<rect id="Rectangle 75" x="87.5612" y="26.5043" width="41.4957" height="4.7449" transform="rotate(90 87.5612 26.5043)" fill="white"/>
+<rect id="Rectangle 77" x="106.541" y="15.4387" width="51.8697" height="4.74489" transform="rotate(90 106.541 15.4387)" fill="white"/>
+</g>
+<g id="Horizontal_Chart">
+<rect id="Rectangle 71" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 72.3776)" fill="white"/>
+<rect id="Rectangle 72" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 79.0205)" fill="white"/>
+<rect id="Rectangle 73" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 85.6633)" fill="white"/>
+</g>
+<path id="Vector" d="M64.4506 46.5624H41.7685L56.8743 61.6866C57.4516 62.2646 58.4018 62.3115 58.9954 61.7516C62.6946 58.2623 65.2392 53.5584 65.9857 48.2708C66.1138 47.3654 65.3634 46.5624 64.4506 46.5624V46.5624ZM62.9374 40.3608C62.1498 28.928 53.0249 19.7921 41.606 19.0035C40.7342 18.9432 40.0001 19.6791 40.0001 20.5539V41.9686H61.3898C62.2635 41.9686 62.9976 41.2336 62.9374 40.3608ZM35.4119 46.5624V23.8528C35.4119 22.9388 34.6099 22.1875 33.7066 22.3158C22.3154 23.9274 13.6083 33.8912 14.0136 45.8322C14.4304 58.0957 24.9766 68.1523 37.2309 67.9983C42.0486 67.938 46.5001 66.3837 50.1602 63.7844C50.9153 63.2485 50.965 62.1354 50.3102 61.4798L35.4119 46.5624Z" fill="white"/>
+</g>
+</g>
+</svg>
