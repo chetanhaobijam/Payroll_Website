@@ -1,109 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Haobijam Chetan Singh">
-  <meta name="description" content="Website to check pay roll">
-  <meta name="keywords" content="Payroll Pay">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Haobijam Chetan Singh" />
+  <meta name="description" content="Website to check pay roll" />
+  <meta name="keywords" content="Payroll Pay" />
   <title>Pay Roll Website</title>
   <!-- Bootstrap 4 -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
-  
   <header>
-    <nav class="navbar navbar-dark fixed-top">
-      <a class="navbar-brand" href="#">Admin Dashboard</a>
-      <div class="nav-user d-flex align-items-center text-light ml-sm-auto mr-1 mr-md-3">
+    <nav class="d-flex text-light align-items-center fixed-top p-2">
+      <h1 class="nav-header header">Admin Dashboard</h1>
+      <div class="nav-user d-flex align-items-center ml-auto">
         <div class="user-icon">
-          <img src="./user.png" alt="User Icon">
+          <img src="./user.png" alt="User Icon" />
         </div>
         <div class="drop-down">
           <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div class="user-id d-none d-md-block">Haobijam Chetan Singh</div>
       </div>
-      <button class="navbar-toggler mr-3" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav py-3">
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Admin_Dashboard.svg" alt="Admin Dashboard">
-            </div>
-            <a class="nav-link active" href="#">Admin Dashboard</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Add_User.svg" alt="Add User">
-            </div>
-            <a class="nav-link" href="#">Add User</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Attendance_Setting.svg" alt="Attendance Setting">
-            </div>
-            <a class="nav-link" href="#">Attendance Setting</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Holiday List.svg" alt="Holiday List">
-            </div>
-            <a class="nav-link" href="#">Holiday List</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Division_List.svg" alt="Division List">
-            </div>
-            <a class="nav-link" href="#">Division List</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Designation_List.svg" alt="Designation List">
-            </div>
-            <a class="nav-link" href="#">Designation List</a>
-          </li>
-          <li class="nav-item d-flex align-items-center ml-4 py-1">
-            <div class="nav-icon">
-              <img src="./Employee_Details.svg" alt="Employee Details">
-            </div>
-            <a class="nav-link" href="#">Employee Details</a>
-          </li>
-        </ul>
+      <div class="nav-icon">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
   </header>
+
+  <aside class="sidebar">
+    <h2 class="sidebar-header header">Admin Dashboard</h2>
+    <div class="close-sidebar">
+      <i class="fa-solid fa-close"></i>
+    </div>
+    <hr />
+    <ul>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Admin_Dashboard">
+              <g id="dashboard">
+                <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7 7H112.807V72H114.807V7V5H112.807H7H5V7V96V98H7H68V96H7V7Z" fill="white" />
+                <g id="Vertical_Chart">
+                  <rect id="Rectangle 74" x="78.0714" y="40.3362" width="27.6638" height="4.7449"
+                    transform="rotate(90 78.0714 40.3362)" fill="white" />
+                  <rect id="Rectangle 76" x="97.051" y="47.2522" width="20.7479" height="4.7449"
+                    transform="rotate(90 97.051 47.2522)" fill="white" />
+                  <rect id="Rectangle 75" x="87.5612" y="26.5043" width="41.4957" height="4.7449"
+                    transform="rotate(90 87.5612 26.5043)" fill="white" />
+                  <rect id="Rectangle 77" x="106.541" y="15.4387" width="51.8697" height="4.74489"
+                    transform="rotate(90 106.541 15.4387)" fill="white" />
+                </g>
+                <g id="Horizontal_Chart">
+                  <rect id="Rectangle 71" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 72.3776)"
+                    fill="white" />
+                  <rect id="Rectangle 72" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 79.0205)"
+                    fill="white" />
+                  <rect id="Rectangle 73" width="52.4592" height="1.89796" transform="matrix(-1 0 0 1 66 85.6633)"
+                    fill="white" />
+                </g>
+                <path id="Vector"
+                  d="M64.4506 46.5624H41.7685L56.8743 61.6866C57.4516 62.2646 58.4018 62.3115 58.9954 61.7516C62.6946 58.2623 65.2392 53.5584 65.9857 48.2708C66.1138 47.3654 65.3634 46.5624 64.4506 46.5624V46.5624ZM62.9374 40.3608C62.1498 28.928 53.0249 19.7921 41.606 19.0035C40.7342 18.9432 40.0001 19.6791 40.0001 20.5539V41.9686H61.3898C62.2635 41.9686 62.9976 41.2336 62.9374 40.3608ZM35.4119 46.5624V23.8528C35.4119 22.9388 34.6099 22.1875 33.7066 22.3158C22.3154 23.9274 13.6083 33.8912 14.0136 45.8322C14.4304 58.0957 24.9766 68.1523 37.2309 67.9983C42.0486 67.938 46.5001 66.3837 50.1602 63.7844C50.9153 63.2485 50.965 62.1354 50.3102 61.4798L35.4119 46.5624Z"
+                  fill="white" />
+              </g>
+              <path id="admin"
+                d="M120.286 104.997C120.526 103.675 120.526 102.325 120.286 101.003L122.665 99.6062C122.942 99.4469 123.062 99.1187 122.969 98.8094C122.352 96.7844 121.291 94.9469 119.908 93.4281C119.696 93.1937 119.355 93.1375 119.079 93.2969L116.7 94.6937C115.695 93.8219 114.543 93.1469 113.298 92.6969V89.9031C113.298 89.5844 113.077 89.3031 112.772 89.2375C110.716 88.7687 108.623 88.7875 106.669 89.2375C106.365 89.3031 106.143 89.5844 106.143 89.9031V92.6969C104.899 93.1469 103.746 93.8219 102.741 94.6937L100.363 93.2969C100.095 93.1375 99.7449 93.1937 99.5328 93.4281C98.1499 94.9469 97.0896 96.7844 96.4719 98.8094C96.3797 99.1187 96.5087 99.4469 96.7761 99.6062L99.1548 101.003C98.9151 102.325 98.9151 103.675 99.1548 104.997L96.7761 106.394C96.4995 106.553 96.3797 106.881 96.4719 107.191C97.0896 109.216 98.1499 111.044 99.5328 112.572C99.7449 112.806 100.086 112.863 100.363 112.703L102.741 111.306C103.746 112.178 104.899 112.853 106.143 113.303V116.097C106.143 116.416 106.365 116.697 106.669 116.762C108.725 117.231 110.818 117.212 112.772 116.762C113.077 116.697 113.298 116.416 113.298 116.097V113.303C114.543 112.853 115.695 112.178 116.7 111.306L119.079 112.703C119.346 112.863 119.696 112.806 119.908 112.572C121.291 111.053 122.352 109.216 122.969 107.191C123.062 106.881 122.932 106.553 122.665 106.394L120.286 104.997V104.997ZM109.73 107.547C107.259 107.547 105.258 105.503 105.258 103C105.258 100.497 107.268 98.4531 109.73 98.4531C112.191 98.4531 114.201 100.497 114.201 103C114.201 105.503 112.201 107.547 109.73 107.547ZM84.6522 94C91.1705 94 96.4534 88.6281 96.4534 82C96.4534 75.3719 91.1705 70 84.6522 70C78.1338 70 72.8509 75.3719 72.8509 82C72.8509 88.6281 78.1338 94 84.6522 94ZM103.202 115.234C102.99 115.122 102.778 114.991 102.575 114.869L101.847 115.3C101.294 115.619 100.667 115.797 100.04 115.797C99.0349 115.797 98.0669 115.366 97.3754 114.616C95.6882 112.759 94.3974 110.5 93.6691 108.091C93.162 106.431 93.8442 104.678 95.3194 103.806L96.0478 103.375C96.0385 103.131 96.0385 102.888 96.0478 102.644L95.3194 102.213C93.8442 101.35 93.162 99.5875 93.6691 97.9281C93.752 97.6562 93.8719 97.3844 93.9641 97.1125C93.6137 97.0844 93.2726 97 92.9131 97H91.3734C89.3266 97.9562 87.0493 98.5 84.6522 98.5C82.2551 98.5 79.987 97.9562 77.931 97H76.3913C69.5503 97 64 102.644 64 109.6V113.5C64 115.984 65.9822 118 68.4255 118H100.879C101.81 118 102.677 117.7 103.387 117.203C103.276 116.847 103.202 116.481 103.202 116.097V115.234Z"
+                fill="white" />
+            </g>
+          </svg>
+        </div>
+        <a href="#">Admin Dashboard</a>
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Add_User">
+              <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                d="M78.8571 31.75C78.8571 46.5252 66.8344 58.5 52 58.5C37.1656 58.5 25.1429 46.5252 25.1429 31.75C25.1429 16.9748 37.1656 5 52 5C66.8344 5 78.8571 16.9748 78.8571 31.75ZM67.296 65.1875H70.8C78.8187 65.1875 86.0582 68.5249 91.1939 73.8806C77.8776 77.1542 68 89.1736 68 103.5C68 106.45 68.4188 109.302 69.2001 112H15.0714C9.51116 112 5 107.507 5 101.969V93.275C5 77.7684 17.6312 65.1875 33.2 65.1875H36.704C41.383 67.3191 46.5446 68.5312 52 68.5312C57.4554 68.5312 62.6379 67.3191 67.296 65.1875Z"
+                fill="white" />
+              <g id="Plus_Sign">
+                <g id="Plus_Border_Circle">
+                  <path id="Subtract_2" fill-rule="evenodd" clip-rule="evenodd"
+                    d="M98.5 128C112.031 128 123 117.031 123 103.5C123 89.969 112.031 79 98.5 79C84.969 79 74 89.969 74 103.5C74 117.031 84.969 128 98.5 128ZM98.5 122.931C109.231 122.931 117.931 114.231 117.931 103.5C117.931 92.7685 109.231 84.0689 98.5 84.0689C87.7685 84.0689 79.069 92.7685 79.069 103.5C79.069 114.231 87.7685 122.931 98.5 122.931Z"
+                    fill="white" />
+                </g>
+                <g id="Plus_Sign_2">
+                  <g id="Rectangle 118">
+                    <rect x="96.2031" y="91.25" width="4.59375" height="22.9688" rx="2.29688" fill="white" />
+                    <rect x="96.2031" y="91.25" width="4.59375" height="22.9688" rx="2.29688" fill="white" />
+                  </g>
+                  <g id="Rectangle 119">
+                    <rect x="110.75" y="101.203" width="4.59375" height="22.9688" rx="2.29688"
+                      transform="rotate(90 110.75 101.203)" fill="white" />
+                    <rect x="110.75" y="101.203" width="4.59375" height="22.9688" rx="2.29688"
+                      transform="rotate(90 110.75 101.203)" fill="white" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <a href="#">Add User</a>
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Attendance_Setting">
+              <g id="Subtract">
+                <mask id="path-1-inside-1_513_16" fill="white">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15 12C9.47715 12 5 16.4772 5 22V90C5 95.5229 9.47715 100 15 100H90V92H100.8C100.931 91.3538 101 90.6849 101 90V22C101 16.4772 96.5228 12 91 12H15Z" />
+                </mask>
+                <path
+                  d="M90 100V103H93V100H90ZM90 92V89H87V92H90ZM100.8 92V95H103.252L103.74 92.5968L100.8 92ZM8 22C8 18.134 11.134 15 15 15V9C7.8203 9 2 14.8203 2 22H8ZM8 90V22H2V90H8ZM15 97C11.134 97 8 93.866 8 90H2C2 97.1797 7.8203 103 15 103V97ZM90 97H15V103H90V97ZM93 100V92H87V100H93ZM90 95H100.8V89H90V95ZM98 90C98 90.4834 97.9515 90.9523 97.8599 91.4032L103.74 92.5968C103.911 91.7553 104 90.8865 104 90H98ZM98 22V90H104V22H98ZM91 15C94.866 15 98 18.134 98 22H104C104 14.8203 98.1797 9 91 9V15ZM15 15H91V9H15V15Z"
+                  fill="white" mask="url(#path-1-inside-1_513_16)" />
+              </g>
+              <rect id="Rectangle 130" x="8" y="28" width="90" height="2" fill="white" />
+              <rect id="Rectangle 131" x="22" y="5" width="5" height="19" rx="2.5" fill="white" />
+              <rect id="Rectangle 132" x="74" y="5" width="4" height="19" rx="2" fill="white" />
+              <rect id="Rectangle 140" x="14" y="48" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 147" x="14" y="62" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 154" x="14" y="76" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 134" x="26" y="34" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 141" x="26" y="48" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 148" x="26" y="62" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 155" x="26" y="76" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 135" x="37" y="34" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 142" x="37" y="48" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 149" x="37" y="62" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 156" x="37" y="76" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 136" x="48" y="34" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 143" x="48" y="48" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 150" x="48" y="62" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 157" x="48" y="76" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 137" x="60" y="34" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 144" x="60" y="48" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 151" x="60" y="62" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 158" x="60" y="76" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 138" x="71" y="34" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 145" x="71" y="48" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 152" x="71" y="62" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 159" x="71" y="76" width="9" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 139" x="82" y="34" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 146" x="82" y="48" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 153" x="82" y="62" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 133" x="14" y="34" width="10" height="10" rx="2" fill="white" />
+              <rect id="Rectangle 160" x="82" y="76" width="10" height="10" rx="2" fill="white" />
+              <path id="Vector"
+                d="M100.509 96.1009C98.9209 96.1009 97.4341 96.7103 96.3084 97.8239C95.188 98.9375 94.5667 100.408 94.5667 101.979C94.5667 103.55 95.188 105.02 96.3084 106.134C97.4341 107.242 98.9209 107.857 100.509 107.857C102.096 107.857 103.583 107.242 104.709 106.134C105.829 105.02 106.451 103.55 106.451 101.979C106.451 100.408 105.829 98.9375 104.709 97.8239C104.159 97.2758 103.505 96.8412 102.784 96.5454C102.062 96.2497 101.289 96.0986 100.509 96.1009V96.1009ZM122.402 108.472L118.929 105.535C119.094 104.537 119.179 103.518 119.179 102.504C119.179 101.49 119.094 100.466 118.929 99.4733L122.402 96.5369C122.664 96.3148 122.852 96.0189 122.94 95.6886C123.028 95.3583 123.013 95.0092 122.896 94.6879L122.848 94.5513C121.892 91.9075 120.46 89.4568 118.621 87.318L118.525 87.2077C118.302 86.948 118.005 86.7612 117.672 86.6722C117.339 86.5831 116.987 86.5958 116.662 86.7087L112.35 88.2268C110.757 86.9346 108.983 85.9155 107.061 85.2063L106.228 80.7466C106.165 80.4106 106 80.1016 105.755 79.8604C105.51 79.6193 105.197 79.4575 104.858 79.3966L104.714 79.3703C101.953 78.8766 99.0431 78.8766 96.2819 79.3703L96.1385 79.3966C95.7986 79.4575 95.4856 79.6193 95.2409 79.8604C94.9962 80.1016 94.8314 80.4106 94.7685 80.7466L93.9295 85.2274C92.0255 85.9422 90.2518 86.9588 88.6779 88.2373L84.3344 86.7087C84.0092 86.5949 83.6568 86.5817 83.3238 86.6709C82.9909 86.76 82.6933 86.9472 82.4706 87.2077L82.375 87.318C80.5393 89.4591 79.1076 91.9091 78.1482 94.5513L78.1004 94.6879C77.8615 95.3445 78.0579 96.0799 78.5942 96.5369L82.1095 99.5048C81.9449 100.492 81.8652 101.501 81.8652 102.499C81.8652 103.508 81.9449 104.516 82.1095 105.493L78.6049 108.461C78.3425 108.683 78.1548 108.979 78.0666 109.309C77.9783 109.64 77.9939 109.989 78.111 110.31L78.1588 110.447C79.1199 113.089 80.5377 115.532 82.3856 117.68L82.4812 117.79C82.7045 118.05 83.0021 118.237 83.3348 118.326C83.6675 118.415 84.0197 118.402 84.345 118.289L88.6886 116.761C90.2709 118.048 92.0339 119.067 93.9402 119.771L94.7791 124.251C94.842 124.587 95.0068 124.896 95.2515 125.138C95.4962 125.379 95.8093 125.54 96.1491 125.601L96.2925 125.628C99.0809 126.124 101.936 126.124 104.725 125.628L104.868 125.601C105.208 125.54 105.521 125.379 105.766 125.138C106.01 124.896 106.175 124.587 106.238 124.251L107.072 119.792C108.994 119.077 110.768 118.063 112.361 116.771L116.672 118.289C116.997 118.403 117.35 118.416 117.683 118.327C118.016 118.238 118.313 118.051 118.536 117.79L118.632 117.68C120.48 115.521 121.897 113.089 122.858 110.447L122.906 110.31C123.135 109.659 122.938 108.929 122.402 108.472ZM100.509 111.214C95.3526 111.214 91.1737 107.08 91.1737 101.979C91.1737 96.8784 95.3526 92.7443 100.509 92.7443C105.665 92.7443 109.844 96.8784 109.844 101.979C109.844 107.08 105.665 111.214 100.509 111.214Z"
+                fill="white" />
+            </g>
+          </svg>
+        </div>
+        <a href="#">Attendance Setting</a>
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Holiday List">
+              <rect id="Rectangle 129" x="6.5" y="15.5" width="115" height="105" rx="8.5" stroke="white"
+                stroke-width="3" />
+              <rect id="Rectangle 130" x="9" y="33" width="110" height="3" fill="white" />
+              <rect id="Rectangle 131" x="26" y="5" width="6" height="23" rx="3" fill="white" />
+              <rect id="Rectangle 132" x="90" y="5" width="5" height="23" rx="2.5" fill="white" />
+              <rect id="Rectangle 147" x="16" y="68" width="15" height="14" rx="3" fill="white" />
+              <rect id="Rectangle 154" x="16" y="94" width="15" height="14" rx="3" fill="white" />
+              <rect id="Rectangle 133" x="16" y="41" width="16" height="14" rx="3" fill="white" />
+            </g>
+          </svg>
+        </div>
+        <a href="#">Holiday List</a>
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Designation_List">
+              <g id="Clipboard">
+                <g id="Bars">
+                  <g id="Group 14">
+                    <rect id="Rectangle 82" x="56.1222" y="44.0667" width="31.3556" height="5.53333" rx="2.76667"
+                      fill="white" />
+                    <g id="bi:briefcase" clip-path="url(#clip0_517_159)">
+                      <path id="Vector"
+                        d="M31.9688 34.6875C31.2974 34.6875 30.6536 34.9542 30.1789 35.4289C29.7042 35.9036 29.4375 36.5474 29.4375 37.2188V38.0625H23.5312C22.8599 38.0625 22.2161 38.3292 21.7414 38.8039C21.2667 39.2786 21 39.9224 21 40.5938V54.0938C21 54.7651 21.2667 55.4089 21.7414 55.8836C22.2161 56.3583 22.8599 56.625 23.5312 56.625H45.4688C46.1401 56.625 46.7839 56.3583 47.2586 55.8836C47.7333 55.4089 48 54.7651 48 54.0938V40.5938C48 39.9224 47.7333 39.2786 47.2586 38.8039C46.7839 38.3292 46.1401 38.0625 45.4688 38.0625H39.5625V37.2188C39.5625 36.5474 39.2958 35.9036 38.8211 35.4289C38.3464 34.9542 37.7026 34.6875 37.0312 34.6875H31.9688ZM31.9688 36.375H37.0312C37.255 36.375 37.4696 36.4639 37.6279 36.6221C37.7861 36.7804 37.875 36.995 37.875 37.2188V38.0625H31.125V37.2188C31.125 36.995 31.2139 36.7804 31.3721 36.6221C31.5304 36.4639 31.745 36.375 31.9688 36.375V36.375ZM35.1514 48.0424L46.3125 45.0673V54.0938C46.3125 54.3175 46.2236 54.5321 46.0654 54.6904C45.9071 54.8486 45.6925 54.9375 45.4688 54.9375H23.5312C23.3075 54.9375 23.0929 54.8486 22.9346 54.6904C22.7764 54.5321 22.6875 54.3175 22.6875 54.0938V45.0656L33.8486 48.0424C34.2754 48.156 34.7246 48.156 35.1514 48.0424V48.0424ZM23.5312 39.75H45.4688C45.6925 39.75 45.9071 39.8389 46.0654 39.9971C46.2236 40.1554 46.3125 40.37 46.3125 40.5938V43.3208L34.7177 46.4122C34.5751 46.4503 34.4249 46.4503 34.2823 46.4122L22.6875 43.3208V40.5938C22.6875 40.37 22.7764 40.1554 22.9346 39.9971C23.0929 39.8389 23.3075 39.75 23.5312 39.75V39.75Z"
+                        fill="white" />
+                    </g>
+                  </g>
+                  <g id="Group 15">
+                    <rect id="Rectangle 82_2" x="56" y="69" width="31.3556" height="5.53333" rx="2.76667"
+                      fill="white" />
+                    <g id="bi:briefcase_2" clip-path="url(#clip1_517_159)">
+                      <path id="Vector_2"
+                        d="M31.9688 59.6875C31.2974 59.6875 30.6536 59.9542 30.1789 60.4289C29.7042 60.9036 29.4375 61.5474 29.4375 62.2188V63.0625H23.5312C22.8599 63.0625 22.2161 63.3292 21.7414 63.8039C21.2667 64.2786 21 64.9224 21 65.5938V79.0938C21 79.7651 21.2667 80.4089 21.7414 80.8836C22.2161 81.3583 22.8599 81.625 23.5312 81.625H45.4688C46.1401 81.625 46.7839 81.3583 47.2586 80.8836C47.7333 80.4089 48 79.7651 48 79.0938V65.5938C48 64.9224 47.7333 64.2786 47.2586 63.8039C46.7839 63.3292 46.1401 63.0625 45.4688 63.0625H39.5625V62.2188C39.5625 61.5474 39.2958 60.9036 38.8211 60.4289C38.3464 59.9542 37.7026 59.6875 37.0312 59.6875H31.9688ZM31.9688 61.375H37.0312C37.255 61.375 37.4696 61.4639 37.6279 61.6221C37.7861 61.7804 37.875 61.995 37.875 62.2188V63.0625H31.125V62.2188C31.125 61.995 31.2139 61.7804 31.3721 61.6221C31.5304 61.4639 31.745 61.375 31.9688 61.375V61.375ZM35.1514 73.0424L46.3125 70.0673V79.0938C46.3125 79.3175 46.2236 79.5321 46.0654 79.6904C45.9071 79.8486 45.6925 79.9375 45.4688 79.9375H23.5312C23.3075 79.9375 23.0929 79.8486 22.9346 79.6904C22.7764 79.5321 22.6875 79.3175 22.6875 79.0938V70.0656L33.8486 73.0424C34.2754 73.156 34.7246 73.156 35.1514 73.0424V73.0424ZM23.5312 64.75H45.4688C45.6925 64.75 45.9071 64.8389 46.0654 64.9971C46.2236 65.1554 46.3125 65.37 46.3125 65.5938V68.3208L34.7177 71.4122C34.5751 71.4503 34.4249 71.4503 34.2823 71.4122L22.6875 68.3208V65.5938C22.6875 65.37 22.7764 65.1554 22.9346 64.9971C23.0929 64.8389 23.3075 64.75 23.5312 64.75V64.75Z"
+                        fill="white" />
+                    </g>
+                  </g>
+                  <g id="Group 16">
+                    <rect id="Rectangle 82_3" x="56" y="96" width="31.3556" height="5.53333" rx="2.76667"
+                      fill="white" />
+                    <g id="bi:briefcase_3" clip-path="url(#clip2_517_159)">
+                      <path id="Vector_3"
+                        d="M31.9688 86.6875C31.2974 86.6875 30.6536 86.9542 30.1789 87.4289C29.7042 87.9036 29.4375 88.5474 29.4375 89.2188V90.0625H23.5312C22.8599 90.0625 22.2161 90.3292 21.7414 90.8039C21.2667 91.2786 21 91.9224 21 92.5938V106.094C21 106.765 21.2667 107.409 21.7414 107.884C22.2161 108.358 22.8599 108.625 23.5312 108.625H45.4688C46.1401 108.625 46.7839 108.358 47.2586 107.884C47.7333 107.409 48 106.765 48 106.094V92.5938C48 91.9224 47.7333 91.2786 47.2586 90.8039C46.7839 90.3292 46.1401 90.0625 45.4688 90.0625H39.5625V89.2188C39.5625 88.5474 39.2958 87.9036 38.8211 87.4289C38.3464 86.9542 37.7026 86.6875 37.0312 86.6875H31.9688ZM31.9688 88.375H37.0312C37.255 88.375 37.4696 88.4639 37.6279 88.6221C37.7861 88.7804 37.875 88.995 37.875 89.2188V90.0625H31.125V89.2188C31.125 88.995 31.2139 88.7804 31.3721 88.6221C31.5304 88.4639 31.745 88.375 31.9688 88.375V88.375ZM35.1514 100.042L46.3125 97.0673V106.094C46.3125 106.318 46.2236 106.532 46.0654 106.69C45.9071 106.849 45.6925 106.938 45.4688 106.938H23.5312C23.3075 106.938 23.0929 106.849 22.9346 106.69C22.7764 106.532 22.6875 106.318 22.6875 106.094V97.0656L33.8486 100.042C34.2754 100.156 34.7246 100.156 35.1514 100.042V100.042ZM23.5312 91.75H45.4688C45.6925 91.75 45.9071 91.8389 46.0654 91.9971C46.2236 92.1554 46.3125 92.37 46.3125 92.5938V95.3208L34.7177 98.4122C34.5751 98.4503 34.4249 98.4503 34.2823 98.4122L22.6875 95.3208V92.5938C22.6875 92.37 22.7764 92.1554 22.9346 91.9971C23.0929 91.8389 23.3075 91.75 23.5312 91.75V91.75Z"
+                        fill="white" />
+                    </g>
+                  </g>
+                </g>
+                <path id="Vector_4"
+                  d="M90.8889 15.6962H69.7567C67.6333 9.49239 62.0722 5 55.5 5C48.9278 5 43.3667 9.49239 41.2433 15.6962H20.1111C14.55 15.6962 10 20.5095 10 26.3923V111.962C10 117.845 14.55 122.658 20.1111 122.658H90.8889C96.45 122.658 101 117.845 101 111.962V26.3923C101 20.5095 96.45 15.6962 90.8889 15.6962ZM55.5 15.6962C58.2806 15.6962 60.5556 18.1028 60.5556 21.0443C60.5556 23.9857 58.2806 26.3923 55.5 26.3923C52.7194 26.3923 50.4444 23.9857 50.4444 21.0443C50.4444 18.1028 52.7194 15.6962 55.5 15.6962ZM95.9444 116.465H16.1199V21.8887H30.2222V32.0219H80.7778V21.8887H95.4123L95.9444 116.465Z"
+                  fill="white" />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_517_159">
+                <rect width="27" height="27" fill="white" transform="translate(21 33)" />
+              </clipPath>
+              <clipPath id="clip1_517_159">
+                <rect width="27" height="27" fill="white" transform="translate(21 58)" />
+              </clipPath>
+              <clipPath id="clip2_517_159">
+                <rect width="27" height="27" fill="white" transform="translate(21 85)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <a href="#">Designation List</a>
+      </li>
+      <li class="d-flex align-items-center">
+        <div class="li-icon">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Employee_Details">
+              <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd"
+                d="M63.8467 14.6364H82.8889C87.9 14.6364 92 18.9727 92 24.2727V62H87.2001L86.9649 20.2153H73.7778V29.3445H28.2222V20.2153H15.5146V105.421H59V111H19.1111C14.1 111 10 106.664 10 101.364V24.2727C10 18.9727 14.1 14.6364 19.1111 14.6364H38.1533C40.0667 9.04727 45.0778 5 51 5C56.9222 5 61.9333 9.04727 63.8467 14.6364ZM55.5556 19.4545C55.5556 16.8045 53.5056 14.6364 51 14.6364C48.4944 14.6364 46.4444 16.8045 46.4444 19.4545C46.4444 22.1045 48.4944 24.2727 51 24.2727C53.5056 24.2727 55.5556 22.1045 55.5556 19.4545Z"
+                fill="white" />
+              <rect id="Rectangle 163" x="33" y="39" width="48" height="5" rx="2.5" fill="white" />
+              <rect id="Rectangle 164" x="33" y="53" width="48" height="5" rx="2.5" fill="white" />
+              <rect id="Rectangle 165" x="33" y="68" width="40" height="5" rx="2.5" fill="white" />
+              <rect id="Rectangle 166" x="33" y="83" width="40" height="5" rx="2.5" fill="white" />
+              <circle id="Ellipse 30" cx="23.5" cy="41.5" r="3.5" fill="white" />
+              <circle id="Ellipse 31" cx="23.5" cy="55.5" r="3.5" fill="white" />
+              <circle id="Ellipse 32" cx="23.5" cy="70.5" r="3.5" fill="white" />
+              <circle id="Ellipse 33" cx="23.5" cy="85.5" r="3.5" fill="white" />
+              <g id="fa-solid:user-tie">
+                <path id="Vector"
+                  d="M91 93.5C99.5219 93.5 106.429 86.8971 106.429 78.75C106.429 70.6029 99.5219 64 91 64C82.4781 64 75.5714 70.6029 75.5714 78.75C75.5714 86.8971 82.4781 93.5 91 93.5ZM102.547 97.2566L96.7857 119.312L92.9286 103.641L96.7857 97.1875H85.2143L89.0714 103.641L85.2143 119.312L79.4527 97.2566C70.8585 97.6484 64 104.367 64 112.675V117.469C64 120.522 66.5915 123 69.7857 123H112.214C115.408 123 118 120.522 118 117.469V112.675C118 104.367 111.142 97.6484 102.547 97.2566V97.2566Z"
+                  fill="white" />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <a href="#">Employee Details</a>
+      </li>
+    </ul>
+  </aside>
 
   <main class="main">
     <h2>Main Dashboard Area</h2>
   </main>
 
   <footer class="d-flex">
-    <div class="log-out">
+    <div class="log-out ml-1">
       <a href="#">Log Out</a>
     </div>
-    <div class="rights ml-auto mr-3">
+    <div class="text-right ml-auto mr-3">
       <span>Pay Roll | </span>
-      <span>Designed and Developed by 
+      <span>Designed and Developed by
         <a href="https://www.cubeten.com">CubeTen</a>
       </span>
     </div>
   </footer>
 
-
-
   <!-- Bootstrap 4 JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
   <script src="./main.js"></script>
 </body>
+
 </html>

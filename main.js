@@ -1,12 +1,21 @@
-const navbarToggler = document.querySelector("#navbar-toggler");
-const main = document.querySelector(".main");
-const footer = document.querySelector("footer");
+const navIcon = document.querySelector(".nav-icon");
+const sidebar = document.querySelector(".sidebar");
+const closeSidebarIcon = document.querySelector(".close-sidebar i");
 
-const narrowItems = () => {
-  navbarToggler.addEventListener("click", () => {
-    main.classList.toggle("narrow-main");
-    footer.classList.toggle("narrow-footer");
+
+// A Function to control Navigation Sidebar
+const sidebarCollapse = () => {
+  navIcon.addEventListener("click", () => {
+    sidebar.classList.toggle("left");
   })
 }
 
-narrowItems();
+// A Function to close Navigation Sidebar
+const closeSidebar = () => {
+  closeSidebarIcon.addEventListener("click", () => {
+    sidebar.classList.remove("left");
+  })
+}
+
+sidebarCollapse();
+closeSidebar();

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Color Palettes */
+  --white: #fff;
+  --black: #333;
+  --gray: #dcd4da;
+  --dark-blue: #345276;
+  --navy: #595a84;
+
+  --blue-gradient-top: linear-gradient(to top, #09203f 0%, #537895 100%);
+  --blue-gradient-right: linear-gradient(to right, #09203f 0%, #537895 100%);
+}
+
+body, html {
+  font-family: 'Roboto';
+}
+
+header .navbar {
+  background: var(--blue-gradient-right);
+  padding: 0;
+}
+
+header .navbar .navbar-brand {
+  font-family: 'Lobster';
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+header .navbar .nav-user {
+  gap: 1em;
+}
+
+header .navbar .nav-user .user-icon img {
+  width: 50px;
+}
+
+header .navbar .navbar-collapse {
+  position: fixed;
+  top: 4.2em;
+  left: 0em;
+  min-width: 100%;
+}
+
+header .navbar div .navbar-nav {
+  background: var(--blue-gradient-top);
+}
+
+header .navbar div .navbar-nav .nav-item {
+  gap: 1em;
+}
+
+header .navbar div .navbar-nav .nav-item .nav-icon img {
+  width: 30px;
+}
+
+.main {
+  margin: 5rem 1rem 1rem;
+  background: var(--gray);
+  border-radius: 5px;
+  padding: 1rem;
+  height: 500px;
+  transition: all ease 0.5s;
+}
+
+.narrow-main {
+  margin-left: 1rem !important;
+}
+
+footer {
+  padding-left: 1rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  transition: all ease 0.5s;
+}
+
+.narrow-footer {
+  padding-left: 1rem;
+}
+
+@media screen and (min-width: 480px) {
+  header .navbar .navbar-brand {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header .navbar .navbar-collapse {
+    min-width: 300px;
+  }
+  header .navbar div .navbar-nav {
+    height: 100vh;
+  }
+  .narrow-main {
+    margin-left: 20rem !important;
+  }
+  .narrow-footer {
+    padding-left: 330px;
+  }
+}
