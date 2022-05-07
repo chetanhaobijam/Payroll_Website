@@ -19,6 +19,7 @@
 body,
 html {
   font-family: "Roboto";
+  background: #cecece;
 }
 
 .header {
@@ -144,9 +145,8 @@ nav {
 }
 
 .main {
-  background: var(--gray);
   height: 70vh;
-  margin: 5rem 1rem 1rem;
+  margin: 8rem 1rem 1rem;
   border-radius: 5px;
 }
 

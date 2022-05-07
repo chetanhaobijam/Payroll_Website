@@ -1,0 +1,55 @@
+.main {
+  position: relative;
+  background: #fff;
+  height: auto;
+}
+
+.heading {
+  position: absolute;
+  background: #004385;
+  box-shadow: 3px 5px 4px 4px rgb(0 67 133 / 20%);
+  color: #fff;
+  width: 94%;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Lobster";
+  top: -2em;
+  left: 1em;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    left: 2em;
+  }
+}
+
+form {
+  padding: 5rem 0 1rem 5rem;
+}
+
+@media screen and (max-width: 567px) {
+  form {
+    padding: 5rem 0 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    padding: 5rem 0 1rem 1.5rem;
+  }
+}
+
+.form-control {
+  width: 90%;
+  max-width: 300px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+input .btn {
+  padding: 0.5rem 1.5rem;
+}
