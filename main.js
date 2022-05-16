@@ -19,18 +19,3 @@ const closeSidebar = () => {
 
 sidebarCollapse();
 closeSidebar();
-
-// Start copying from here
-const adminBtn = document.querySelector(".admin-btn");
-const masterBtn = document.querySelector(".master-btn");
-const adminUl = document.querySelector(".admin-ul");
-const masterUl = document.querySelector(".master-ul");
-
-const collapseSection = (btn, section) => {
-  btn.addEventListener("click", () => {
-    section.classList.toggle("hide");
-  })
-}
-
-collapseSection(adminBtn, adminUl);
-collapseSection(masterBtn, masterUl);

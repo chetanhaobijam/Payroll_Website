@@ -190,25 +190,34 @@ footer {
 }
 
 /* Start Copying from here */
-.sub-header {
-  margin: 1rem 1.5rem 0.5rem;
-  font-size: 1.3rem;
+.accordion-item {
+  background-color: transparent;
+  border: none;
 }
 
-.sub-header h3 {
-  font-weight: 300;
-  font-size: 1.3rem;
-  margin: 0;
+.accordion-button {
+  color: #fff;
+  background-color: transparent;
 }
 
-.sub-header i {
-  cursor: pointer;
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
 }
 
-.sidebar .admin-ul, .sidebar .master-ul {
-  padding: 0.5rem 1.5rem;
+.accordion-button:focus {
+  border: none;
+  box-shadow: 0 0 2px 2px rgb(255 252 252 / 10%);
 }
 
-.hide {
-  display: none !important;
+.accordion-item ul {
+  margin-left: 0.5rem;
+}
+
+.accordion-button::after {
+  background-image: url(./Chevron_bottom.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(./Chevron_bottom.svg);
 }
