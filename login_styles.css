@@ -23,6 +23,10 @@ body {
   place-content: center;
 }
 
+.container {
+  width: 90%;
+}
+
 .gray-background {
   background: #e5e5e5;
   border-top-left-radius: 20px;
@@ -31,15 +35,17 @@ body {
 
 .login {
   border-radius: 20px;
+  padding: 1.5rem 0 1.5rem 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .login {
-    border-radius: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+.title {
+  margin-left: -2rem;
 }
+
+form {
+  min-width: 270px;
+}
+
 .cubeten {
   width: 50px;
 }
@@ -61,6 +67,15 @@ input[type="submit"] {
   width: 50%;
 }
 
-
-
-
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  
+  .login {
+    border-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1.5rem 0 1.5rem 3rem;
+  }
+}
